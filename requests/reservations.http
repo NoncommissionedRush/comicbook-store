@@ -1,0 +1,33 @@
+### MAKE A RESERVATION
+POST http://localhost:5000/reservations
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "bookId": 29,
+      "amount": 1
+    }
+  ],
+  "note": "I would like one daredevil please"
+}
+
+
+### GET ALL RESERVATIONS
+GET http://localhost:5000/reservations
+
+
+### GET ALL PENDING RESERVATIONS
+GET http://localhost:5000/reservations/pending
+
+
+### GET RESEVATION BY ID
+GET http://localhost:5000/reservations/21
+
+
+### PROCESS RESERVATION
+PUT http://localhost:5000/reservations/15
+
+
+### DELETE RESERVATION
+DELETE http://localhost:5000/reservations/13

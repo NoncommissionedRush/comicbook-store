@@ -1,0 +1,28 @@
+### REGISTER NEW USER
+POST http://localhost:5000/users/auth/register
+Content-Type: application/json
+
+{
+  "username": "bedo",
+  "password": "12345"
+}
+
+### LOGIN USER
+POST http://localhost:5000/users/auth/login
+Content-Type: application/json
+
+{
+  "username": "bedo",
+  "password": "12345"
+}
+
+### LOGOUT USER
+DELETE http://localhost:5000/users/auth/logout
+
+
+### GET ALL USERS
+GET http://localhost:5000/users
+
+
+### GET LOGGED IN USER
+GET http://localhost:5000/users/me

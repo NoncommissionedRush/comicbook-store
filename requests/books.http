@@ -1,0 +1,25 @@
+### GET ALL TAGS
+GET http://localhost:5000/books/tags
+
+
+### GET BOOK BY ID
+GET http://localhost:5000/books/13
+
+
+### CREATE NEW BOOK
+POST http://localhost:5000/books
+Content-Type: application/json
+
+{
+  "title": "Daredevil",
+  "amount": 10,
+  "price": 9.99,
+  "tags": ["Marvel", "Daredevil"]
+}
+
+### GET ALL BOOKS
+GET http://localhost:5000/books
+
+
+### GET BOOKS BY TAGS
+GET http://localhost:5000/books/search?tags=Marvel,Spiderman

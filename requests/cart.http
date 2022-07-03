@@ -1,0 +1,36 @@
+### GET SESSION CART
+GET http://localhost:5000/cart
+
+
+### ADD TO CART
+POST http://localhost:5000/cart
+Content-Type: application/json
+
+{
+  "bookId": 29,
+  "amount": 1
+}
+
+
+### UPDATE CART
+PUT http://localhost:5000/cart/update
+Content-Type: application/json
+
+{
+  "bookId": 3,
+  "amount": 2
+}
+
+
+### REMOVE FROM CART
+PUT http://localhost:5000/cart/remove
+Content-Type: application/json
+
+{
+  "bookId": 1,
+  "amount": 2
+}
+
+
+### CLEAR CART
+DELETE http://localhost:5000/cart
